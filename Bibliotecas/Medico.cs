@@ -10,12 +10,10 @@ namespace Bibliotecas
     {
         public string Especialidad { get; set; }
         public List<Paciente> listaEspera;
-        public int idAtendido;
         public Medico(string nombre, string apellido,string especialidad):base(nombre,apellido)
         {
                 this.listaEspera = new List<Paciente>();
                 this.Especialidad = especialidad;
-                this.idAtendido = -1;
         }
         public override string ToString()
         {

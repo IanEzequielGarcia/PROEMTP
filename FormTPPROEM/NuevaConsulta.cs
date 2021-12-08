@@ -34,7 +34,6 @@ namespace FormTPPROEM
                 if ((medico.Especialidad == ingresado || medico.Nombre == ingresado))
                 {
                     this.medicoId = contador;
-
                     if (medico.Ocupado == false)
                     {
                         break;

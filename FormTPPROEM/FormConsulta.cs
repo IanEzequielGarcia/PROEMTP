@@ -119,7 +119,7 @@ namespace FormTPPROEM
                     }
                     //MessageBox.Show("El medico esta ocupado");
                 }
-                if(atendido==0 && form.DialogResult != DialogResult.Cancel)
+                if(atendido==0 && (form.DialogResult != DialogResult.Cancel && form.DialogResult != DialogResult.No))
                 {
                     MessageBox.Show("Todos los pacientes estan siendo atendidos");
                 }

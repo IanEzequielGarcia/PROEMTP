@@ -41,26 +41,16 @@ namespace FormTPPROEM
             this.btnSalaEspera = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPacientes
@@ -75,7 +65,7 @@ namespace FormTPPROEM
             // lblMedicos
             // 
             this.lblMedicos.AutoSize = true;
-            this.lblMedicos.Location = new System.Drawing.Point(511, 67);
+            this.lblMedicos.Location = new System.Drawing.Point(456, 67);
             this.lblMedicos.Name = "lblMedicos";
             this.lblMedicos.Size = new System.Drawing.Size(52, 15);
             this.lblMedicos.TabIndex = 3;
@@ -83,21 +73,25 @@ namespace FormTPPROEM
             // 
             // btnConsulta
             // 
-            this.btnConsulta.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(246)))), ((int)(((byte)(169)))));
+            this.btnConsulta.FlatAppearance.BorderSize = 0;
             this.btnConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsulta.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnConsulta.Location = new System.Drawing.Point(0, 1);
+            this.btnConsulta.Image = global::FormTPPROEM.Properties.Resources.add1;
+            this.btnConsulta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsulta.Location = new System.Drawing.Point(0, 0);
             this.btnConsulta.Name = "btnConsulta";
-            this.btnConsulta.Size = new System.Drawing.Size(169, 51);
+            this.btnConsulta.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnConsulta.Size = new System.Drawing.Size(169, 50);
             this.btnConsulta.TabIndex = 4;
             this.btnConsulta.Text = "Nueva\r\n Consulta";
-            this.btnConsulta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnConsulta.UseVisualStyleBackColor = false;
             this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
             // lPacientes
             // 
-            this.lPacientes.Enabled = false;
+            this.lPacientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lPacientes.ForeColor = System.Drawing.SystemColors.Window;
             this.lPacientes.FormattingEnabled = true;
             this.lPacientes.ItemHeight = 15;
             this.lPacientes.Location = new System.Drawing.Point(12, 85);
@@ -107,69 +101,78 @@ namespace FormTPPROEM
             // 
             // lMedicos
             // 
-            this.lMedicos.BackColor = System.Drawing.SystemColors.Window;
+            this.lMedicos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lMedicos.ForeColor = System.Drawing.SystemColors.Window;
             this.lMedicos.FormattingEnabled = true;
             this.lMedicos.ItemHeight = 15;
-            this.lMedicos.Location = new System.Drawing.Point(434, 85);
+            this.lMedicos.Location = new System.Drawing.Point(456, 85);
             this.lMedicos.Name = "lMedicos";
             this.lMedicos.Size = new System.Drawing.Size(420, 394);
             this.lMedicos.TabIndex = 6;
             // 
             // btnFinalizar
             // 
-            this.btnFinalizar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnFinalizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(128)))), ((int)(((byte)(148)))));
+            this.btnFinalizar.FlatAppearance.BorderSize = 0;
             this.btnFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinalizar.Image = global::FormTPPROEM.Properties.Resources.minus2;
+            this.btnFinalizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFinalizar.Location = new System.Drawing.Point(0, 0);
             this.btnFinalizar.Name = "btnFinalizar";
-            this.btnFinalizar.Size = new System.Drawing.Size(169, 52);
+            this.btnFinalizar.Size = new System.Drawing.Size(169, 50);
             this.btnFinalizar.TabIndex = 7;
             this.btnFinalizar.Text = "Terminar\r\nConsulta";
-            this.btnFinalizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFinalizar.UseVisualStyleBackColor = false;
             this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
             // 
             // btnEstadisticas
             // 
-            this.btnEstadisticas.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnEstadisticas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(213)))), ((int)(((byte)(250)))));
+            this.btnEstadisticas.FlatAppearance.BorderSize = 0;
             this.btnEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEstadisticas.Location = new System.Drawing.Point(0, -1);
+            this.btnEstadisticas.Image = global::FormTPPROEM.Properties.Resources.graph2;
+            this.btnEstadisticas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEstadisticas.Location = new System.Drawing.Point(0, 0);
             this.btnEstadisticas.Name = "btnEstadisticas";
-            this.btnEstadisticas.Size = new System.Drawing.Size(169, 51);
+            this.btnEstadisticas.Size = new System.Drawing.Size(164, 50);
             this.btnEstadisticas.TabIndex = 8;
-            this.btnEstadisticas.Text = "Estadisticas";
-            this.btnEstadisticas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEstadisticas.Text = "   Estadisticas";
             this.btnEstadisticas.UseVisualStyleBackColor = false;
             this.btnEstadisticas.Click += new System.EventHandler(this.btnEstadisticas_Click);
             // 
             // btnSiendoAtendidos
             // 
-            this.btnSiendoAtendidos.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSiendoAtendidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(172)))), ((int)(((byte)(249)))));
+            this.btnSiendoAtendidos.FlatAppearance.BorderSize = 0;
             this.btnSiendoAtendidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSiendoAtendidos.Location = new System.Drawing.Point(0, -1);
+            this.btnSiendoAtendidos.Image = global::FormTPPROEM.Properties.Resources.patient3;
+            this.btnSiendoAtendidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSiendoAtendidos.Location = new System.Drawing.Point(0, 0);
             this.btnSiendoAtendidos.Name = "btnSiendoAtendidos";
             this.btnSiendoAtendidos.Size = new System.Drawing.Size(169, 52);
             this.btnSiendoAtendidos.TabIndex = 9;
             this.btnSiendoAtendidos.Text = "En Atencion";
-            this.btnSiendoAtendidos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSiendoAtendidos.UseVisualStyleBackColor = false;
             this.btnSiendoAtendidos.Click += new System.EventHandler(this.btnEspera_Click);
             // 
             // btnSalaEspera
             // 
-            this.btnSalaEspera.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSalaEspera.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(227)))), ((int)(((byte)(231)))));
+            this.btnSalaEspera.FlatAppearance.BorderSize = 0;
             this.btnSalaEspera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalaEspera.Location = new System.Drawing.Point(0, -1);
+            this.btnSalaEspera.Image = global::FormTPPROEM.Properties.Resources.waiting3;
+            this.btnSalaEspera.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalaEspera.Location = new System.Drawing.Point(0, 0);
             this.btnSalaEspera.Name = "btnSalaEspera";
-            this.btnSalaEspera.Size = new System.Drawing.Size(169, 51);
+            this.btnSalaEspera.Size = new System.Drawing.Size(169, 50);
             this.btnSalaEspera.TabIndex = 10;
-            this.btnSalaEspera.Text = "Sala Espera";
-            this.btnSalaEspera.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSalaEspera.Text = "   Sala Espera";
             this.btnSalaEspera.UseVisualStyleBackColor = false;
             this.btnSalaEspera.Click += new System.EventHandler(this.btnSalaEspera_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
@@ -184,107 +187,47 @@ namespace FormTPPROEM
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel5.Controls.Add(this.pictureBox5);
             this.panel5.Controls.Add(this.btnEstadisticas);
             this.panel5.Location = new System.Drawing.Point(712, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(169, 50);
             this.panel5.TabIndex = 13;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.pictureBox5.Image = global::FormTPPROEM.Properties.Resources.statistics;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(78, 50);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.Controls.Add(this.btnSiendoAtendidos);
             this.panel4.Location = new System.Drawing.Point(537, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(169, 50);
             this.panel4.TabIndex = 13;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.pictureBox4.Image = global::FormTPPROEM.Properties.Resources.patient2;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(78, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.btnSalaEspera);
             this.panel3.Location = new System.Drawing.Point(362, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(169, 50);
             this.panel3.TabIndex = 13;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.pictureBox3.Image = global::FormTPPROEM.Properties.Resources.waiting;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(78, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.btnFinalizar);
             this.panel2.Location = new System.Drawing.Point(187, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(169, 50);
             this.panel2.TabIndex = 13;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.pictureBox2.Image = global::FormTPPROEM.Properties.Resources.minus;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(78, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel6.Controls.Add(this.pictureBox1);
             this.panel6.Controls.Add(this.btnConsulta);
             this.panel6.Location = new System.Drawing.Point(12, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(169, 50);
             this.panel6.TabIndex = 12;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.pictureBox1.Image = global::FormTPPROEM.Properties.Resources.add;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(78, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // FormConsulta
             // 
@@ -297,21 +240,19 @@ namespace FormTPPROEM
             this.Controls.Add(this.lPacientes);
             this.Controls.Add(this.lblMedicos);
             this.Controls.Add(this.lblPacientes);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormConsulta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultorio Online";
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,15 +270,10 @@ namespace FormTPPROEM
         private System.Windows.Forms.Button btnSalaEspera;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
