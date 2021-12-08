@@ -21,3 +21,4 @@ C:\Users\Ianch\OneDrive\Escritorio\PROEM\PROEMTP\Bibliotecas\obj\Debug\net5.0\Bi
 C:\Users\Ianch\OneDrive\Escritorio\PROEM\PROEMTP\Bibliotecas\obj\Debug\net5.0\Bibliotecas.dll
 C:\Users\Ianch\OneDrive\Escritorio\PROEM\PROEMTP\Bibliotecas\obj\Debug\net5.0\ref\Bibliotecas.dll
 C:\Users\Ianch\OneDrive\Escritorio\PROEM\PROEMTP\Bibliotecas\obj\Debug\net5.0\Bibliotecas.pdb
+C:\Users\Ianch\OneDrive\Escritorio\PROEM\PROEMTP\Bibliotecas\obj\Debug\net5.0\Bibliotecas.csproj.AssemblyReference.cache

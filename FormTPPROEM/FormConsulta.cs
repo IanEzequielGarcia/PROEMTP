@@ -63,7 +63,8 @@ namespace FormTPPROEM
             InicializarEstadisticas();
         }
         /// <summary>
-        /// Crea una nueva consulta al primer paciente libre en la lista y le agrega el medico elegido
+        /// Crea una nueva consulta al primer paciente libre en la lista y le agrega el medico elegido,
+        /// si el medico se encuentra ocupado lo agrega a la lista de espera
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -129,7 +130,9 @@ namespace FormTPPROEM
                 MessageBox.Show("No hay nadie para atender");
             }
         }
-
+        /// <summary>
+        /// carga los medicos en ListaMedicos a ListBoxMedicos
+        /// </summary>
         private void CargarMedicos()
         {
             this.lMedicos.DataSource = null;
@@ -140,6 +143,9 @@ namespace FormTPPROEM
             }
             this.lMedicos.DataSource = medicos;
         }
+        /// <summary>
+        /// carga los pacientes en ListaPacientes a ListBoxPacientes
+        /// </summary>
         private void CargarPacientes()
         {
             this.lPacientes.DataSource = null;
