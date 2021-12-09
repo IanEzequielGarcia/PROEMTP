@@ -23,15 +23,5 @@ namespace Bibliotecas
         {
             return med.ToString();
         }
-        public static List<Medico> operator +(List<Medico> lista, Medico objeto)
-        {
-            lista.Add(objeto);
-            return lista;
-        }
-        public static List<Medico> operator -(List<Medico> lista, Medico objeto)
-        {
-            lista.Remove(objeto);
-            return lista;
-        }
     }
 }

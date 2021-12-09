@@ -101,7 +101,9 @@ namespace FormTPPROEM
                 }
                 else if (form.DialogResult == DialogResult.No)
                 {
-                    if(MessageBox.Show("El medico esta ocupado, agregar a la lista de espera?", "importante",MessageBoxButtons.YesNo)==DialogResult.Yes)
+                    DialogResult rta;
+                    rta = MessageBox.Show("El medico esta ocupado, agregar a la lista de espera?", "importante", MessageBoxButtons.YesNo);
+                    if (rta == DialogResult.Yes)
                     {
                         for (int i = 0; i < this.ListaPacientes.Elementos.Count; i++)
                         {
@@ -118,11 +120,15 @@ namespace FormTPPROEM
                         }
                         CargarMedicos();
                     }
-                    //MessageBox.Show("El medico esta ocupado");
+                    if(rta == DialogResult.No || rta == DialogResult.Cancel)
+                    {
+                        MessageBox.Show("Consulta Cancelada");
+                        atendido = 1;
+                    }
                 }
-                if(atendido==0 && (form.DialogResult != DialogResult.Cancel && form.DialogResult != DialogResult.No))
+                if(atendido==0 && (form.DialogResult != DialogResult.Cancel))
                 {
-                    MessageBox.Show("Todos los pacientes estan siendo atendidos");
+                    MessageBox.Show("Todos los pacientes ya estan siendo atendidos");
                 }
             }
             else 
@@ -196,6 +202,9 @@ namespace FormTPPROEM
                     MessageBox.Show("Consulta Finalizada, " + this.respuesta[index]);
                     CargarMedicos();
                     CargarPacientes();
+                }else if(form.DialogResult == DialogResult.Cancel)
+                {
+                    MessageBox.Show("Consulta cancelada");
                 }
                 else
                 {
